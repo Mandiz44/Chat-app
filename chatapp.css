@@ -1,0 +1,38 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    grid-template-rows: 1fr auto ;
+}
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.users-list {
+    grid-column: 1 / 2; /* Span from grid line 1 to 2 (first column) */
+    grid-row: 1 / 3; /* Span across both rows */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.messages-list {
+    grid-column: 2 / 3; /* Span from grid line 2 to 3 (second column) */
+    grid-row: 1 / 2; /* First row */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.new-message-box {
+    grid-column: 2 / 3; /* Span from grid line 2 to 3 (second column) */
+    grid-row: 2 / 3; /* Second row */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
